@@ -1,5 +1,5 @@
 # ResNet-9
-
+ResNet-9 is a deep convolutional neural network trained on the CIFAR-10 dataset. The architecture is implemented from the paper [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf), it's a residual learning network to ease the training of networks that are substantially deeper. I designed a smalled architecture compared to the paper and  achieved 93.65% testing accuracy on the CIFAR-10 dataset with significantly less training time, I used maxpooling for the downsampling so only the important features are selected, ReLU activations has been used on every Convulation layer, and a dropout of 20% has been used. These are used with Adam optimizer using OneCycleLR as the learning rate scheduler instead of SGD with COSINE Annealing  as mentioned in the paper.
 # Dependencies
 * [PyTorch](https://pytorch.org/)
 * [Matplotlib](https://matplotlib.org/)
